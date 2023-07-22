@@ -1,0 +1,59 @@
+/* Otra forma de utilizar fuentes externas */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body{
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    margin-bottom: 20vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.container-images{
+    display: flex;
+}
+
+.container-images img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo{
+    margin: 0 20px;
+}
+
+
+/* nth-child: señecciona el n elemento hijo dentro del contenedor */
+.logo:nth-child(1){
+    /* Retraso en la transición durante 400ms antes de aplicar los cambios del CSS */
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 600ms;
+}
