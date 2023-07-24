@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    
+    /* el tamaño total (width y height) se calcula sumando el tamaño del contenido interno, se ignora el pdding y el border*/
+    box-sizing: border-box; 
+}
+
+.container{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .logo-img{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: background .5s;
+}
+
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+
+    /* 
+    transition: <propiedad> <duración> <función-timing> <retardo>;
+    <propiedad> = la propiedad que se va a animar
+    <duración> = el tiempo que durará la animación
+
+    Estas son opcionales:
+    <función-timing> = la función que se aplicará a la animación (cómo se acelerará o desacelerará la transición durante la duración)
+    <retardo> = el tiempo que tardará en comenzar la animación
+    */
+    transition: background .5s, margin-left .5s;
+}
+
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp{
+    width: 100%;   
+}
+
+.light{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;   
+}
+
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+/* Cambio de color del boton cuando se le da click (luz encendida)*/
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+
+/* Muestra la imagen de la luz */
+.on{
+    opacity: 1;
+}
