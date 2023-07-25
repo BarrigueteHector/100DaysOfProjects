@@ -1,0 +1,109 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bodoni Moda', serif;
+    /* el tamaño total (width y height) se calcula sumando el tamaño del contenido interno, se ignora el pdding y el border*/
+    box-sizing: border-box; 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 0%;
+    padding-left: 10%;
+    padding-right: 25%;
+}
+
+.logo{
+    width: 210px;
+    height: 75px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+button{
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+/* El icono del sol (ligth theme) debe ser blanco*/
+.icon-light{
+    color: #fff;
+}
+
+.text-container{
+    margin: 0 10%;
+    padding-bottom: 10%;
+}
+
+.text-container h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.text-container h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-container p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Cambio de opacidad del icono */
+.transparent{
+    opacity: 0;
+}
+.opaque{
+    opacity: 1;
+}
+
+/* Cambio el tema y color del texto de nav*/
+.dark,
+.dark a{
+    background: #000;
+    color: #fff;
+}
+
+/* Evita que cambie de color por el cambio de tema */
+.text-container a{
+    text-decoration: none;
+    color: #0085FF;
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* Para que se le aplique el margen */
+    display: block; 
+}
