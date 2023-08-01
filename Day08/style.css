@@ -1,0 +1,80 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* El body ocupa todo el tamaño de la ventana*/
+html,
+body{
+    height: 100%;
+    /* Se puede agregar aqui 
+    margin: 0;
+    padding: 0;
+    */
+}
+
+/* Usamos una imagen como fondo de la página */
+body{
+    background: url(img/background_image.jpg);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Coloca la imagen en el centro horizontal y vertical */
+}
+
+.container{
+    background: #fff;
+    border-radius: 10px;
+    margin: 10em 10%;
+}
+
+.container h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.new-product{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.text-info, 
+.button-add,
+.button-clear{
+    margin: 10px 15px;
+}
+
+#add{
+    background-color: #28C402;
+}
+
+#clear,
+#delete-list{
+    background-color: red;
+}
+
+#add,
+#clear,
+#delete-list{
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.list ul{
+    list-style: none;
+}
+
+.list button{
+    margin: 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Day 08 </title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script defer src="app.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1> Supermarket list </h1>
+
+            <div class="new-product">
+                <div class="text-info">
+                    <input type="text" id="product-name" placeholder="Product name">    
+                </div>
+                <div class="text-info">
+                    <input type="number" id="product-quantity" placeholder="Quantity">
+                </div>
+                <div class="text-info">
+                    <select id="select-unit">
+                    <option value="">Selecciona</option>
+                    <option value="litro(s)">Litros</option>
+                    <option value="caja(s)">Cajas</option>
+                    <option value="kilo(s)">Kilos</option>
+                    <option value="lata(s)">Latas</option>
+                    <option value="pieza(s)">Piezas</option>
+                    </select>
+                </div>
+                <div class="button-add">
+                    <button id="add"> Add </button>
+                </div>
+                <div class="button-clear">
+                    <button id="clear"> Clear </button>
+                </div>
+            </div>
+            
+            <div class="list">
+                <h2> Product list</h2>
+                <ul id="product-list"> </ul>
+                <button id="delete-list" style="display: none;">Delete List</button>
+            </div>
+        </div>
+    </body>
+</html>
